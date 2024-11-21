@@ -20,11 +20,11 @@ const CandidateCard = ({
         <>
             {candidate?.login ? (
                 <>
-                    <section style={{ display: 'flex', flexDirection: 'column', height: '70vh', border: '1px solid #f0f0f0', borderRadius: '8px' }}>
+                    <section style={{ display: 'flex', flexDirection: 'column',  border: '1px solid #f0f0f0', borderRadius: '8px' }}>
                         <figure style={{ flex: '1 1 30%', display: 'flex', justifyContent: 'top', alignItems: 'center' }}>
                             <img src={candidate.avatar_url} alt={`${candidate.name}-avatar`} style={{ maxHeight: '100%', maxWidth: '100%' }} />
                         </figure>
-                        <article className='details' style={{ flex: '1 1 70%', overflowY: 'auto', padding: '.3rem' }}>
+                        <article className='details' style={{ flex: '1 1 70%', padding: '.3rem' }}>
                             <h2 style={{ textAlign: 'center', fontSize: '310%', margin: 0 }}>{candidate.login}</h2>
                             <p>
                                 <strong>Name: </strong> 
